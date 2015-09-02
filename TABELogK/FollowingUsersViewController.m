@@ -7,6 +7,8 @@
 //
 
 #import "FollowingUsersViewController.h"
+#import "DrawLine.h"
+
 
 @interface FollowingUsersViewController ()
 
@@ -22,6 +24,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    redUnderLine = [[DrawLine alloc] initWithFrame:CGRectMake(20, 32, 120, 3)];
+    [redUnderLine setBackgroundColor:[UIColor redColor]];
+    [self.wishOrWent addSubview:redUnderLine];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,70 +37,44 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 10;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"storeInfoIdentifier"];
     
+    UIView *viewRadius = (UIView *)[cell viewWithTag:1000];
+    viewRadius.layer.borderWidth = 0.2;
+    viewRadius.layer.borderColor = [UIColor colorWithRed:0.73 green:0.73 blue:0.73 alpha:1.0].CGColor;
+    viewRadius.layer.cornerRadius = 5;
+    
+    UIButton *buttonStore = (UIButton *)[cell viewWithTag:1001];
+    UILabel *labelAddress = (UILabel *)[cell viewWithTag:1002];
+    UILabel *labelStatus = (UILabel *)[cell viewWithTag:1003];
+    UILabel *labelReview = (UILabel *)[cell viewWithTag:1004];
+   
+    
+    if(indexPath.row == 0){
+        [buttonStore setTitle:@"okay shop" forState:UIControlStateNormal];
+        labelAddress.text = @"台北市信義區松智路1 號19 樓A號19 樓A";
+        labelStatus.text = @"WishedForm";
+        labelReview.text = @"MaryApple Review";
+    } else if(indexPath.row ==1) {
+        [buttonStore setTitle:@"Eddie Ruby" forState:UIControlStateNormal];
+        labelAddress.text = @"University of Southern California Los Angeles, CA 90033";
+        labelStatus.text = @"WishedForm";
+        labelReview.text = @"MaryApple Review";
+    }
     return cell;
+    
+    
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

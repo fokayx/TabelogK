@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class DrawLine;
 @interface FollowingUsersViewController : UITableViewController
+{
+    DrawLine *redUnderLine;
+}
+@property (weak, nonatomic) IBOutlet UIView *wishOrWent;
 
 @end

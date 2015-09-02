@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E19AD547-35BA-44DA-9554-614A38D9140F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TABELogK</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0FDF67DAFA790218906AB42048EB9027084460BF</key>
+		<string>https://github.com/fokayx/TabelogK.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TABELogK.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0FDF67DAFA790218906AB42048EB9027084460BF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/fokayx/TabelogK.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0FDF67DAFA790218906AB42048EB9027084460BF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0FDF67DAFA790218906AB42048EB9027084460BF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TABELogK</string>
+		</dict>
+	</array>
+</dict>
+</plist>

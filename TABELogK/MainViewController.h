@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  TABELogK
 //
 //  Created by oKay on 8/29/15.
@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NetworkingManager.h"
 
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *borderLabel;
+
+@property (weak, nonatomic) IBOutlet UIButton *signUpWithFB;
+@property (weak, nonatomic) IBOutlet UIButton *signUpWithIG;
 
 @end
 

@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+@class DrawLine;
+@interface SignInViewController : UIViewController <UITextFieldDelegate>
 
-@interface SignInViewController : UIViewController
+{
+    DrawLine *orSignInWithLeft;
+    DrawLine *orSignInWithRight;
+}
+
+@property (weak, nonatomic) IBOutlet UIView *signInTabelog;
+@property (weak, nonatomic) IBOutlet UITextField *txtUsername;
+@property (weak, nonatomic) IBOutlet UITextField *txtPassword;
+@property (weak, nonatomic) IBOutlet UIButton *signInButton;
+@property (weak, nonatomic) IBOutlet UIView *orSignInWith;
+
+- (IBAction)signinClicked:(id)sender;
+- (IBAction)backgroundTap:(id)sender;
 
 @end
