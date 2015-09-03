@@ -11,10 +11,14 @@
 
 @implementation NetworkingManager
 
-+(void)authorizationInfo:(AFHTTPRequestOperationManager *)manager{
+
++(AFHTTPRequestOperationManager *)authorizedManager{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.securityPolicy.allowInvalidCertificates = YES;
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     [manager.requestSerializer setAuthorizationHeaderFieldWithUsername:@"tabelog"password:@"12345678"];
+
+    return manager;
 }
 
 @end

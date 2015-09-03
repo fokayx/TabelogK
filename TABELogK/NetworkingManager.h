@@ -10,5 +10,6 @@
 #import <AFNetworking/AFNetworking.h>
 @interface NetworkingManager : NSObject
 
-+(void)authorizationInfo:(AFHTTPRequestOperationManager *)manager;
++(AFHTTPRequestOperationManager *)authorizedManager;
+
 @end

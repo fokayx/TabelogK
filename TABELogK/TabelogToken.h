@@ -11,8 +11,7 @@
 @interface TabelogToken : NSObject
 
 
-
-+(void)getToken:(NSDictionary *)responseObject;
++(void)setToken:(NSString *)responseObject;
 +(NSString *)signInSecret;
 
 @end

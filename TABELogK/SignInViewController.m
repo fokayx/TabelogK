@@ -11,7 +11,7 @@
 #import "AFNetworking.h"
 #import "NetworkingManager.h"
 #import "tabelogToken.h"
-
+#import "SSKeychain.h"
 @interface SignInViewController ()
 
 @end
@@ -59,14 +59,15 @@
     NSString *username = [self.txtUsername text];
     NSString *password = [self.txtPassword text];
     
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [NetworkingManager authorizationInfo:manager];
     
+//    使用SSKeychain套件，存放Tabelog SECRET
+//    NSString *secret = [SSKeychain passwordForService:@"tabelogSignIn" account:@"signInToken"];
+//    NSDictionary *parameters = @{@"email":username , @"password":password, @"secret": secret};
+   
     NSDictionary *parameters = @{@"email":username , @"password":password, @"secret": [TabelogToken signInSecret]};
+
     
-//    NSLog(@"%@", parameters);
-    
-    [manager POST:@"https://ssl.tabelog-us-stg1.5xruby.tw/api/v3/authentication.json" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [[NetworkingManager authorizedManager] POST:@"https://ssl.tabelog-us-stg1.5xruby.tw/api/v3/authentication.json" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
