@@ -100,7 +100,7 @@
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="rUi-Kl-KBI" kind="modal" id="HES-G9-nvb"/>
+                                            <segue destination="rUi-Kl-KBI" kind="modal" id="GHr-tF-OT7"/>
                                         </connections>
                                     </button>
                                 </subviews>
