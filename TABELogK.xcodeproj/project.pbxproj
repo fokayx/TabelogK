@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433773EE1B982BBE000DE3BF /* TabelogUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 433773ED1B982BBE000DE3BF /* TabelogUIView.m */; };
 		433F121D1B91F7E9004CC4C3 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433F121C1B91F7E9004CC4C3 /* SignInViewController.m */; };
 		4347E97B1B92C00900A86816 /* FollowingUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347E97A1B92C00900A86816 /* FollowingUsersViewController.m */; };
 		436F62401B92D95D00AF107F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 436F623F1B92D95D00AF107F /* Main.storyboard */; };
 		437375A81B9499EC00561217 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437375A71B9499EC00561217 /* Images.xcassets */; };
 		4383CC771B968FC7001F7A1F /* NetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4383CC761B968FC7001F7A1F /* NetworkingManager.m */; };
 		4383CC7A1B96ADB6001F7A1F /* TabelogToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 4383CC791B96ADB6001F7A1F /* TabelogToken.m */; };
+		439571CF1B984B280015FADE /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 439571CE1B984B280015FADE /* UserData.m */; };
+		439571D21B984C0E0015FADE /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 439571D11B984C0E0015FADE /* UserModel.m */; };
 		43A43A561B91DC52003D27B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A43A551B91DC52003D27B9 /* main.m */; };
 		43A43A591B91DC52003D27B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A43A581B91DC52003D27B9 /* AppDelegate.m */; };
 		43A43A5C1B91DC52003D27B9 /* TABELogK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43A43A5A1B91DC52003D27B9 /* TABELogK.xcdatamodeld */; };
@@ -36,6 +39,8 @@
 /* Begin PBXFileReference section */
 		271D79367C53535D7F3FDB8F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2A6D4B077B47CF699F270BA0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		433773EC1B982BBE000DE3BF /* TabelogUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabelogUIView.h; sourceTree = "<group>"; };
+		433773ED1B982BBE000DE3BF /* TabelogUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabelogUIView.m; sourceTree = "<group>"; };
 		433F121B1B91F7E9004CC4C3 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		433F121C1B91F7E9004CC4C3 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		4347E9791B92C00900A86816 /* FollowingUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowingUsersViewController.h; sourceTree = "<group>"; };
@@ -46,6 +51,10 @@
 		4383CC761B968FC7001F7A1F /* NetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingManager.m; sourceTree = "<group>"; };
 		4383CC781B96ADB6001F7A1F /* TabelogToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabelogToken.h; sourceTree = "<group>"; };
 		4383CC791B96ADB6001F7A1F /* TabelogToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabelogToken.m; sourceTree = "<group>"; };
+		439571CD1B984B280015FADE /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
+		439571CE1B984B280015FADE /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+		439571D01B984C0E0015FADE /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		439571D11B984C0E0015FADE /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		43A43A501B91DC52003D27B9 /* TABELogK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TABELogK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A43A541B91DC52003D27B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A43A551B91DC52003D27B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -124,6 +133,12 @@
 				4383CC761B968FC7001F7A1F /* NetworkingManager.m */,
 				4383CC781B96ADB6001F7A1F /* TabelogToken.h */,
 				4383CC791B96ADB6001F7A1F /* TabelogToken.m */,
+				433773EC1B982BBE000DE3BF /* TabelogUIView.h */,
+				433773ED1B982BBE000DE3BF /* TabelogUIView.m */,
+				439571CD1B984B280015FADE /* UserData.h */,
+				439571CE1B984B280015FADE /* UserData.m */,
+				439571D01B984C0E0015FADE /* UserModel.h */,
+				439571D11B984C0E0015FADE /* UserModel.m */,
 			);
 			path = TABELogK;
 			sourceTree = "<group>";
@@ -308,13 +323,16 @@
 			files = (
 				433F121D1B91F7E9004CC4C3 /* SignInViewController.m in Sources */,
 				4383CC771B968FC7001F7A1F /* NetworkingManager.m in Sources */,
+				439571D21B984C0E0015FADE /* UserModel.m in Sources */,
 				43D1FFB61B91FBAA002969A7 /* DrawLine.m in Sources */,
 				43A43A591B91DC52003D27B9 /* AppDelegate.m in Sources */,
 				4347E97B1B92C00900A86816 /* FollowingUsersViewController.m in Sources */,
+				433773EE1B982BBE000DE3BF /* TabelogUIView.m in Sources */,
 				43A43A561B91DC52003D27B9 /* main.m in Sources */,
 				43A43A5F1B91DC52003D27B9 /* MainViewController.m in Sources */,
 				4383CC7A1B96ADB6001F7A1F /* TabelogToken.m in Sources */,
 				43A43A5C1B91DC52003D27B9 /* TABELogK.xcdatamodeld in Sources */,
+				439571CF1B984B280015FADE /* UserData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MagicalRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,12 +27,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3216E6FA5EDBC051816C1C54D4E89813</key>
+		<key>5BBAC7A9D58E845A6524587F1AAD7E5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>94D7B17ED74C857530F8A72C7EDC45F4</key>
+		<key>7B11621080737612EEDCAFBB374CCBD1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B43FE34253D4958061F2B2ACDCF0A37E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

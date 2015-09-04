@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <CoreData+MagicalRecord.h>
+#import "UserData.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +18,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"tabelogdb"];
+    
+    
+    UserData* currentSignedInUser = [UserData MR_findFirstByAttribute:@"isSignedIn" withValue:@(YES)];
+    if (currentSignedInUser) {
+        NSLog(@"yes");
+    } else {
+        NSLog(@"no");
+    }
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
