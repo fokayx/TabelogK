@@ -68,15 +68,21 @@
     NSString *password = [self.txtPassword text];
     
     UserModel* user = [[UserModel alloc] init];
+
     
-//    block寫法，再研究，先使用delegate寫法
+//    block寫法
+        [user signInWithEmail:username
+              andPassword:password
+                  success:^{NSLog(@"uu");}
+                     fail:^{NSLog(@"ff");}];
+//
+//    user.delegate = self;
+//    [user signInWithEmail:username andPassword:password];
+    
+//    把delegate一起寫在方法裡的方法
 //    [user signInWithEmail:username
 //              andPassword:password
-//                  success:^{NSLog(@"uu");}
-//                     fail:^{NSLog(@"ff");}];
-    
-    user.delegate = self;
-    [user signInWithEmail:username andPassword:password];
+//                 delegate:self];
 }
 
 -(void) alertStatus:(NSString *)msg :(NSString *)title :(int) tag

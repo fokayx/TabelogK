@@ -20,6 +20,7 @@
 @property (nonatomic, weak) id<UserModelDelegate> delegate;
 
 - (void) signInWithEmail:(NSString *) email andPassword:(NSString *) password;
+- (void) signInWithEmail:(NSString *) email andPassword:(NSString *) password delegate:(id)delegate;
 - (void) signInWithEmail:(NSString *) email
              andPassword:(NSString *) password
                  success:(void (^)(void))success
